@@ -1,0 +1,78 @@
+<ion-header [translucent] = "true">
+  <ion-toolbar color="primary">  
+    <ion-menu-button slot="start"></ion-menu-button> 
+    <ion-title>Contato</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nome</ion-label>
+    <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label >Senha</ion-label>
+    <ion-input type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Idade</ion-label>
+    <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label placeholder="Coloque seu telefone">Telefone</ion-label>
+    <ion-input type="tel"></ion-input>
+    </ion-item>
+    <ion-list>
+      <ion-list-header>Interesses</ion-list-header>
+      <ion-item>
+        <ion-label>Cinema</ion-label>
+        <ion-checkbox slot="start" color="danger"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Teatro</ion-label>
+        <ion-checkbox slot="start" color="danger"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Dança</ion-label>
+        <ion-checkbox slot="start" color="danger"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Música</ion-label>
+        <ion-checkbox slot="start" color="danger"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Receber Informações</ion-label>
+        <ion-toggle></ion-toggle>
+      </ion-item>
+    </ion-list>
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>
+        <ion-label>Usa Gmail?</ion-label>
+      </ion-list-header>
+
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio slot="start" ></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio slot="start" ></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <ion-item>
+    <ion-label>Genêro</ion-label>
+    <ion-select multiple="true" canceltext="Cancelar" okText="Confirmar">
+      <ion-select-option>Masculino</ion-select-option>
+      <ion-select-option>Feminino</ion-select-option>
+    </ion-select>
+  </ion-item>
+  </ion-list>
+</ion-content>

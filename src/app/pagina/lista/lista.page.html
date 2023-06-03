@@ -1,0 +1,28 @@
+<ion-header [translucent] = "true">
+  <ion-toolbar color="primary">  
+    <ion-menu-button slot="start"></ion-menu-button> 
+    <ion-title>Lista</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list *ngFor="let p of personas">
+    <ion-item>{{p.nome}}  
+      <ion-avatar slot="start">
+        <ion-img [src]="p.url"></ion-img>
+      </ion-avatar>
+      <ion-badge color="primary" slot="end">{{p.estrelas}}</ion-badge>
+    </ion-item>  
+  </ion-list>
+
+<ion-card *ngFor="let p of personas" >
+  <ion-card-header color="primary">
+    <ion-card-title>{{p.nome}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <ion-img [src]="p.url"></ion-img>
+  </ion-card-content> 
+</ion-card>
+
+</ion-content>

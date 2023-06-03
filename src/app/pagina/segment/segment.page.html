@@ -1,0 +1,34 @@
+<ion-header [translucent] = "true">
+  <ion-toolbar color="primary">  
+    <ion-menu-button slot="start"></ion-menu-button> 
+    <ion-title>Segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment (ionChange)="alterar($event)">
+    <ion-segment-button value="celular">
+      <ion-icon name="call"></ion-icon>
+      <ion-label>Celular</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="tec">
+      <ion-icon name="cash"></ion-icon>
+      <ion-label>Tec</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <ion-list *ngIf="escolha=='celular'">
+    <ion-item>Apple</ion-item>
+    <ion-item>Xiaomi</ion-item>
+    <ion-item>Sansung</ion-item>
+    <ion-item>Motorola</ion-item>
+  </ion-list>
+
+  <ion-list *ngIf="escolha=='tec'">
+    <ion-item>Google</ion-item>
+    <ion-item>Microsoft</ion-item>
+    <ion-item>Cisco</ion-item>
+    <ion-item>Facebook</ion-item>
+  </ion-list>
+</ion-content>
